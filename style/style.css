@@ -1,7 +1,82 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
+:root {
+    --color-dark1: #09090A;
+    --color-dark2: #0F1012;
+    --color-dark3: #121114;
+    --color-purple: #5901e6e8;
+    --color-purple2: #5801e4b6;
+}
 
 * {
     margin: 0; padding: 0;
     box-sizing: border-box;
 }
 
+body {
+    font-family: 'Lato', Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    color: #fff;
+    background-color: var(--color-dark1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem; /*1rem = 16px*/
+}
+
+h1 {
+    margin-top: 4rem;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+#add-item-container {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+#input-new-task,
+#btn-add-task {
+    font-size: 1rem;
+    padding: 1rem;
+    outline: none; /*Outline tira a faixa que aparece fora do input*/
+}
+
+#input-new-task {
+    width: 20rem;
+    padding: 1rem;
+    border-radius: 10px;
+}
+
+#btn-add-task {
+    background-color: var(--color-purple);
+    color: #fff;
+    border-radius: 50%;
+    width: 50px; height: 50px;
+    cursor: pointer;
+    transition: .5s;
+}
+
+#btn-add-task:hover {
+    background-color: var(--color-purple2);
+}
+
+#options-container {
+    display: flex;
+    gap: .5rem;
+    flex-wrap: wrap;
+}
+
+#incomplete-tasks,
+#complete-tasks {
+    padding: 1rem;
+    border-radius: 10px;
+    font-weight: bold;
+    background-color: var(--color-purple);
+    color: #fff;
+}
