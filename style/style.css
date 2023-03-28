@@ -79,6 +79,7 @@ h1 {
     font-weight: bold;
     background-color: var(--color-purple);
     color: #fff;
+    cursor: pointer;
 }
 
 #to-do-list {
